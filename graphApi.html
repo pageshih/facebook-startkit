@@ -30,8 +30,7 @@
 		//step1:https://www.parse.com/docs/js/guide#users-facebook-users
 		 Parse.initialize("ZDM8b2jsj56YR6abdCEovmUTl39FIbxg4UmEp9uk", "uwGIhKZZVnjXWxWEUIsGMarF4UNdwJN881v17PqP");
       window.fbAsyncInit = function() {
-    Parse.FacebookUtils.init({ // this line replaces FB.init
-    ({
+    Parse.FacebookUtils.init({ // this line replaces FB.init ({
       appId      : '{959108397463509}', // Facebook App ID
       status     : true,  // check Facebook Login status
       cookie     : true,  // enable cookies to allow Parse to access the session
@@ -69,7 +68,7 @@
     alert("User cancelled the Facebook login or did not fully authorize.");
   }
 });
-		}
+		};
 		
 	</script>
     <script src="js/graphApi.js"></script>		   	
