@@ -68,7 +68,7 @@ src="+response.data.url+"crossorigin=\"anonymous\" id=preview1 / >");
  }); 
  //個⼈人資訊
  FB.api('/me',function(response) {
-   $('#fbImgView').append("<h1>Welcome ,+(response['gender']=="male"?"Mr. ":"Miss ")
+   $('#fbImgView').append("<h1>Welcome,"+(response['gender']=="male"?"Mr. ":"Miss ")
 +" "+response['first_name']+"</h1>");   
  });
   }   
@@ -78,7 +78,7 @@ src="+response.data.url+"crossorigin=\"anonymous\" id=preview1 / >");
     alert("User cancelled the Facebook login or did not fully authorize.");
   }
 });
-		}
+		};
 		
 	</script>
     <script src="js/graphApi.js"></script>		   	
